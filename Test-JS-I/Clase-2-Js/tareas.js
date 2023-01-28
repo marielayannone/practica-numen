@@ -27,8 +27,8 @@ const nuevaMultiplicacion = 10 * 4 === 40 ;
 alert (10 * 4 === 40);
 
 // Resuelve el siguiente problema matemático:
-const nuevoModulo = 21 % 5 === 4;
-alert (21 % 5 === 4);
+const nuevoModulo = 21 % 5 === 1;
+alert (21 % 5 === 1);
 
 // ----------------------------------
 
@@ -83,10 +83,10 @@ function tienenMismaLongitud(str1, str2) {
   // Devuelve "true" si las dos strings tienen la misma longitud
   // De lo contrario, devuelve "false"
   // Tu código: 
-  if (str1 == str2) {return true}
+  if (str1.length == str2.length)  {return true}
   else {return false};
 }
-tienenMismaLongitud(8,5);
+tienenMismaLongitud("hola", "chau");
 
 function menosQueNoventa(num) {
   // Devuelve "true" si el argumento de la función "num" es menor que noventa
@@ -185,10 +185,10 @@ function esPositivo(numero) {
   // Si el número es 0, devuelve false
   // Tu código:
   if (numero > 0) { 
-       return("es positivo");} 
+       return("Es positivo");} 
 
   else if (numero <0) {
-    return ("es negativo");
+    return ("Es negativo");
   }
   else { return false};
 }
@@ -218,7 +218,7 @@ function obtenerSaludo(nombre) {
   // "Nahuel" -> "Hola Nahuel!"
   // Tu código:
 
-  return("hola"+" " + nombre)
+  return("Hola"+" " + nombre + "!")
 }
 obtenerSaludo ("Mariela");
 
